@@ -6,11 +6,11 @@ module.exports = function(fn) {
 
   inherits(fn, EventEmitter);
 
-  var self = new fn();
-
-  self.addEventListener = function(ev, cb) {
-    self.on(ev,cb);
+  fn.prototype.addEventListener = function(ev, cb) {
+    this.on(ev,cb);
   };
+
+  var self = new fn();
 
   global.postMessage = // unfortunately global for worker (no namespaces?)
   self.postMessage = function(msg) {
