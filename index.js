@@ -12,6 +12,7 @@ module.exports = function(fn) {
     console.log('addEventListener',ev,cb);
   };
 
+  global.postMessage = // unfortunately global for worker (no namespaces?)
   fn.prototype.postMessage = function(msg) {
     console.log('postMessage',msg);
   };
