@@ -1,0 +1,19 @@
+{
+  "name": "unworkify-example",
+  "description": "",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deathcap/unworkify.git"
+  },
+  "keywords": [],
+  "dependencies": {
+    "gamma": "~0.1.0",
+    "webworkify": "~0.1.0"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "start-web": "beefy main.js"
+  },
+  "license": "MIT"
+}
