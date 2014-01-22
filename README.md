@@ -10,7 +10,7 @@ write:
 
     w = require('unworkify')(require('./worker.js'));
 
-Compatible with NodeJS and browserify.
+Compatible with NodeJS and browserify. Warning: incomplete and possibly buggy API implementation
 
 ## Example
 
