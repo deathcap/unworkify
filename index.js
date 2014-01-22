@@ -5,12 +5,16 @@ var inherits = require('inherits');
 module.exports = function(fn) {
 
   inherits(fn, EventEmitter);
-  console.log('fN',fn);
+  console.log('fn', fn);
 
-  fn.addEventListener = function(ev, cb) {
-    this.on(ev, cb);
+  fn.prototype.addEventListener = function(ev, cb) {
+    this.on(ev,cb);
     console.log('addEventListener',ev,cb);
   };
 
-  return fn;
+  fn.prototype.postMessage = function(msg) {
+    console.log('postMessage',msg);
+  };
+
+  return new fn();
 };
