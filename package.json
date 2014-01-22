@@ -1,13 +1,14 @@
 {
   "name": "unworkify",
-  "description": "",
+  "description": "non-concurrent API compatible with webworkers",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:deathcap/unworkify.git"
   },
   "keywords": [
-    "voxel"
+    "webworker",
+    "webworkify"
   ],
   "dependencies": {
     "inherits": "1.0.0"

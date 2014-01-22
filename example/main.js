@@ -3,7 +3,7 @@ var work;
 if (process.browser) {
   work = require('webworkify');
   console.log('Using webworkify');
-} else {
+} else { // note: unworkify is _also_ compatible with browser
   work = require('../');
   console.log('Using unworkify');
 }
