@@ -2,5 +2,8 @@ Based on example from [https://github.com/substack/webworkify](https://github.co
 
 To use in browser (with webworkify):
 
-    `beefy main.js`
+    beefy main.js
 
+To use on server (with unworkify):
+
+    node main.js
