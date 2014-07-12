@@ -1,7 +1,7 @@
 {
   "name": "unworkify",
   "description": "non-concurrent API compatible with webworkers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:deathcap/unworkify.git"
